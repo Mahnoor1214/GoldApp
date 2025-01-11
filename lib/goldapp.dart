@@ -23,7 +23,8 @@ class _goldappState extends State<goldapp> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.white,
-          floatingActionButton: FloatingActionButton(backgroundColor:Colors.purpleAccent,child:Icon(Icons.add),onPressed: ( ) {
+          floatingActionButton: FloatingActionButton(backgroundColor:Colors.purpleAccent,
+              child:Icon(Icons.add),onPressed: ( ) {
             if(goldPriceController.text=='') {
               Get.snackbar("Error", "Gold Price must be filled");
             }
@@ -148,6 +149,3 @@ class _goldappState extends State<goldapp> {
     );
   }
 }
-
-
-
